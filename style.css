@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    margin: 0;
+}
+
+.titulo {
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, white 20%, white 60%, white 80%, white);
+    -webkit-backgorund-clip: text;
+    background-clip: text;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+}
+
+.container {
+    background-color: #fff;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+.form {
+    padding: 10px 20px;
+}
+
+.campo-formulario input {
+    border: solid 2px black;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+.campo-formulario input:focus {
+    outline: none;
+}
+
+.campo-formulario {
+    margin-bottom: 5px;
+}
+
+.campo-formulario label {
+    display: block;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.campo-formulario.error input {
+    border-color: var(--error-color);
+}
+
+.campo-formulario.success input {
+    border-color: var(--success-color);
+}
+
+.campo-formulario small {
+    color: var(--error-color);
+}
+
+.input-group {
+    position: relative;
+}
+
+.bi-eye-slash {
+    position: absolute;
+    top: 8px;
+    right: 5%;
+    cursor: pointer;
+}
+
+.btn {
+    width: 75%;
+    padding: 3%;
+    border-radius: 20px;
+    z-index: auto;
+    background: #ffa84b;
+    background-image: linear-gradient(to right, white 20%, white 60%, white 80%, white);
+    color: black;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.imglg {
+    width: 330px;
+    height: 340px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+#dadosFormulario {
+    color: black;
+    padding-top: 20px;
+}
+
+.btnConfirm {
+    width: 75%;
+    padding: 3%;
+    border-radius: 20px;
+    z-index: auto;
+    background: #ffa84b;
+    background-image: linear-gradient(to right, white 20%, white 60%, white 80%, white);
+    color: black;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.btnConfirm:hover {
+    cursor: pointer;
+}
+
+.btnConfirm:focus {
+    outline: none;
+}
